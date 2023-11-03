@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
+import android.widget.TextView
 
 class SigninActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +23,13 @@ class SigninActivity : AppCompatActivity() {
             var x= Intent(applicationContext,
                 MainActivity::class.java)
             startActivity(x)
-
     }
+//        find signup id
+        var signup=findViewById<TextView>(R.id.signup)
+        signup.setOnClickListener {
+            var x=Intent(applicationContext,SignupActivity::class.java)
+            startActivity(x)
+        }
+
         //postman
 }}

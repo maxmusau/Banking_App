@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
+import android.widget.TextView
 
 class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +25,11 @@ class SignupActivity : AppCompatActivity() {
         signup.setOnClickListener {
             var x=Intent(applicationContext,
                 SigninActivity::class.java)
+            startActivity(x)
+        }
+        var signin=findViewById<TextView>(R.id.login)
+        signin.setOnClickListener {
+            var x=Intent(applicationContext,SigninActivity::class.java)
             startActivity(x)
         }
 
