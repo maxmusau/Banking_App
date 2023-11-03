@@ -3,6 +3,7 @@ package com.example.booking_app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
@@ -20,6 +21,7 @@ class SignupActivity : AppCompatActivity() {
 
 //        prgressbar
         var progressbar =findViewById<ProgressBar>(R.id.progressbar)
+        progressbar.visibility=View.GONE
 //        signup button
         var signup =findViewById<Button>(R.id.signup)
         signup.setOnClickListener {
@@ -33,9 +35,7 @@ class SignupActivity : AppCompatActivity() {
             startActivity(x)
         }
 
-//      signup
-//       signin
-        //mainactivity
-//        getrooms
+//create a dabasabe called booking_db
+
     }
 }

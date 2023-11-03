@@ -3,6 +3,7 @@ package com.example.booking_app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
@@ -14,6 +15,7 @@ class SigninActivity : AppCompatActivity() {
         setContentView(R.layout.activity_signin)
 //        finding ids
         var progressbar=findViewById<ProgressBar>(R.id.progressbar)
+        progressbar.visibility= View.GONE
         var username=findViewById<EditText>(R.id.username)
         var password=findViewById<EditText>(R.id.password)
 
