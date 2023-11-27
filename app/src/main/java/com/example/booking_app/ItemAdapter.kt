@@ -82,7 +82,7 @@ class ItemAdapter(val context:Context) :
             editor.putString("availability",item.availability)
             editor.putString("cost",item.cost)
             editor.putInt("room_id",item.room_id)
-            editor.putString("num",item.square_feet)
+            editor.putString("square_feet",item.square_feet)
             editor.putString("room_desc",item.room_desc)
 
             editor.apply()

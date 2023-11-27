@@ -61,11 +61,33 @@ class GetRoomsActivity : AppCompatActivity() {
                         "Something Went wrong", Toast.LENGTH_SHORT).show()
 
                 }
-
             }
             )//end of client get method
         //put the adpater into the recycler view
         recyclerView.adapter=adapter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
